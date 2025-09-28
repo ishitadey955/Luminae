@@ -1,12 +1,13 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://luminae-c85h.onrender.com"; // use your Render backend
+// 👇 change this to your Render backend
+const API_BASE_URL = "https://luminae-c85h.onrender.com";
 
 const axiosInstance = axios.create({
   baseURL: API_BASE_URL,
-  withCredentials: true,
+  withCredentials: true, // keep if you use cookies / sessions
 });
 
-console.log("Axios baseURL:", API_BASE_URL);
+console.log("Axios Base URL →", API_BASE_URL);
 
 export default axiosInstance;
