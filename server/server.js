@@ -31,7 +31,7 @@ const PORT = process.env.PORT || 5000;
 // ✅ Allow both localhost (dev) and Vercel frontend (prod)
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://luminae-955-4gh8zsijzq-ishita-deys-projects.vercel.app" // replace with your exact Vercel frontend URL
+  "luminae-955-6vavoz7x7-ishita-deys-projects.vercel.app" // replace with your exact Vercel frontend URL
 ];
 
 app.use(
