@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import axiosInstance from "../../axiosInstance"; // ✅ centralized axios
 
 const initialState = {
   isLoading: false,
@@ -7,23 +7,18 @@ const initialState = {
 };
 
 export const addReview = createAsyncThunk(
-  "review/addReview",   // <-- better naming than "/order/addReview"
+  "review/addReview",
   async (formdata) => {
-    const response = await axios.post(
-      "http://localhost:5000/api/shop/review/add",
-      formdata
-    );
-    return response.data; // should contain { success: true, data: review }
+    const response = await axiosInstance.post("/api/shop/review/add", formdata);
+    return response.data; // expected { success: true, data: review }
   }
 );
 
 export const getReviews = createAsyncThunk(
   "review/getReviews",
   async (id) => {
-    const response = await axios.get(
-      `http://localhost:5000/api/shop/review/${id}`
-    );
-    return response.data; // should contain { success: true, data: [reviews] }
+    const response = await axiosInstance.get(`/api/shop/review/${id}`);
+    return response.data; // expected { success: true, data: [reviews] }
   }
 );
 
