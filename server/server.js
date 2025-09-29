@@ -20,7 +20,7 @@ const commonFeatureRouter = require("./routes/common/feature-routes");
 // ✅ use environment variable for MongoDB in production
 mongoose.connect(
   process.env.MONGO_URI ||
-    "mongodb+srv://ishitadey955_:ishitadey04@cluster0.hzn1c6h.mongodb.net/"
+    "db_url"
 )
   .then(() => console.log("MongoDB Connected"))
   .catch((error) => console.log(error));
