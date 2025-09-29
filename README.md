@@ -1,5 +1,3 @@
-
-
 # 🛒 MERN E-Commerce App
 
 A full-stack e-commerce application built using the **MERN stack** (MongoDB, Express.js, React, Node.js).  
@@ -120,12 +118,6 @@ The app should now be running at:
 
 ---
 
-📸 Screenshots
-
-(Add screenshots of Home Page, Cart, Admin Dashboard, etc.)
-
-
----
 
 🤝 Contributing
 
