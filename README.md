@@ -44,9 +44,26 @@ and an **admin dashboard** for managing orders and featured images.
 
 ---
 
-## 📂 Project Structure
-
-mern-ecommerce/ │── client/                   # React frontend │   ├── public/               # Public assets │   └── src/ │       ├── assets/           # Local images, icons, etc. │       ├── components/       # Reusable UI components │       ├── store/            # Redux slices │       ├── pages/            # Pages (Home, Cart, Admin, etc.) │       ├── App.jsx           # Main React App entry │       └── main.jsx          # React DOM entry │ │── server/                   # Node/Express backend │   ├── config/               # DB and server config │   ├── controllers/          # Business logic (e.g., feature-controller.js) │   ├── models/               # Mongoose schemas │   ├── routes/               # API routes │   ├── uploads/              # Uploaded files (if stored locally) │   └── server.js             # Main server entry │ └── README.md                 # Project documentation
+mern-ecommerce/
+│── client/                   # React frontend
+│   ├── public/               # Public assets
+│   └── src/
+│       ├── assets/           # Local images, icons, etc.
+│       ├── components/       # Reusable UI components
+│       ├── store/            # Redux slices
+│       ├── pages/            # Pages (Home, Cart, Admin, etc.)
+│       ├── App.jsx           # Main React App entry
+│       └── main.jsx          # React DOM entry
+│
+│── server/                   # Node/Express backend
+│   ├── config/               # DB and server config
+│   ├── controllers/          # Business logic (e.g., feature-controller.js)
+│   ├── models/               # Mongoose schemas
+│   ├── routes/               # API routes
+│   ├── uploads/              # Uploaded files (if stored locally)
+│   └── server.js             # Main server entry
+│
+└── README.md                 # Project documentation
 
 ---
 
