@@ -43,7 +43,8 @@ and an **admin dashboard** for managing orders and featured images.
 - Cloudinary (optional image storage)  
 
 ---
-
+#project structure
+```bash
 mern-ecommerce/
 │── client/                   # React frontend
 │   ├── public/               # Public assets
@@ -64,6 +65,7 @@ mern-ecommerce/
 │   └── server.js             # Main server entry
 │
 └── README.md                 # Project documentation
+
 
 ---
 
